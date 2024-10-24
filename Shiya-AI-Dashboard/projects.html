@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <script src="assets/js/projects.js" defer></script>
+    <title>ShiyaSphere - Projects</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            SHIYA<span class="logo-after">SPHERE</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="finance.html">Finance</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="learning.html">Learning</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="login.html">Login</a> / <a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">Enable Dark Mode</button>
+    </header>
+
+    <main class="main-section">
+        <h1>Manage Your Projects</h1>
+        <p>View and track the progress of your projects, add new projects, and stay on top of your tasks.</p>
+        <button class="add-project-btn">Add New Project</button>
+
+        <section class="project-list">
+            <!-- Example Project Cards -->
+            <div class="project-card">
+                <h2>Project Alpha</h2>
+                <p>Status: <span class="project-status in-progress">In Progress</span></p>
+                <p>Deadline: <strong>December 31, 2024</strong></p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+                <button class="edit-project-btn">Edit Project</button>
+            </div>
+
+            <div class="project-card">
+                <h2>Project Beta</h2>
+                <p>Status: <span class="project-status completed">Completed</span></p>
+                <p>Deadline: <strong>October 10, 2024</strong></p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+                <button class="edit-project-btn">Edit Project</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add New Project</h2>
+            <form id="project-form">
+                <label for="project-title">Project Title</label>
+                <input type="text" id="project-title" name="project-title" required>
+
+                <label for="project-description">Description</label>
+                <textarea id="project-description" name="project-description" rows="4" required></textarea>
+
+                <label for="project-start-date">Start Date</label>
+                <input type="date" id="project-start-date" name="project-start-date" required>
+
+                <label for="project-end-date">End Date</label>
+                <input type="date" id="project-end-date" name="project-end-date" required>
+
+                <label for="project-status">Status</label>
+                <select id="project-status" name="project-status">
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <button type="submit" class="modal-submit-btn">Add Project</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="chat-toggle-btn">Chat with Shiya AI</button>
+    <div id="chat-popup" class="chat-popup">
+        <div id="chat-popup-header">Shiya AI Assistant</div>
+        <div id="chat-box"></div>
+        <div id="chat-popup-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 ShiyaSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>

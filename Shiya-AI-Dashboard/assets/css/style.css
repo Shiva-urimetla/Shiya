@@ -1,0 +1,364 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styles */
+#main-header {
+  background-color: #1b1b2f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  background-image: linear-gradient(to right, #1b1b2f, #005f8c);
+}
+
+#main-header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00a8ff;
+  text-transform: uppercase;
+}
+
+#main-header .logo-after {
+  color: #ffffff;
+}
+
+#main-header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-header nav ul li {
+  margin: 0 15px;
+}
+
+#main-header nav ul li a {
+  color: #dcdde1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#main-header nav ul li a:hover,
+#main-header nav ul li a.active {
+  color: #00a8ff;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #00a8ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #007bbf;
+}
+
+/* Main Section Styles */
+.main-section {
+  text-align: center;
+  padding: 80px 50px;
+  background-image: linear-gradient(to bottom, #ffffff, #e0f7ff);
+}
+
+.main-section h1 {
+  font-size: 3.5rem;
+  color: #1b1b2f;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.main-section button {
+  background-color: #00a8ff;
+  color: #fff;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background-color 0.3s;
+}
+
+.main-section button:hover {
+  background-color: #007bbf;
+}
+
+/* Slider Styles */
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00a8ff;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slider-arrow.left {
+  left: 20px;
+}
+
+.slider-arrow.right {
+  right: 20px;
+}
+
+.slider-arrow:hover {
+  background-color: #007bbf;
+}
+
+/* Dashboard Widgets */
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 60px;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.widget:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.widget h2 {
+  margin-bottom: 20px;
+  color: #1b1b2f;
+  font-size: 2rem;
+}
+
+.widget p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.widget a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00a8ff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.widget a:hover {
+  background-color: #007bbf;
+}
+
+/* Chat Popup Styles */
+#chat-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00a8ff;
+  color: #fff;
+  border: none;
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#chat-toggle-btn:hover {
+  background-color: #007bbf;
+}
+
+#chat-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 400px;
+  max-height: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+#chat-popup-header {
+  background-color: #1b1b2f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.user-message {
+  color: #000;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.ai-message {
+  color: #007bbf;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+#chat-popup-footer {
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#chat-popup-footer input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#chat-popup-footer button {
+  background-color: #00a8ff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#chat-popup-footer button:hover {
+  background-color: #007bbf;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1b1b2f;
+  color: #dcdde1;
+  text-align: center;
+  padding: 30px;
+  margin-top: 80px;
+  font-size: 1rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1b1b2f;
+  color: #dcdde1;
+}
+
+body.dark-mode .widget {
+  background-color: #333;
+  color: #dcdde1;
+}
+
+body.dark-mode .widget a {
+  background-color: #00a8ff;
+}
+
+body.dark-mode #main-header {
+  background-color: #000;
+  background-image: linear-gradient(to right, #000, #333);
+}
+
+body.dark-mode #main-header .logo {
+  color: #00a8ff;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #00a8ff;
+}
+
+body.dark-mode #chat-popup {
+  background-color: #333;
+}
+
+body.dark-mode #chat-popup-header {
+  background-color: #000;
+}
+
+body.dark-mode #chat-popup-footer input {
+  background-color: #555;
+  color: #fff;
+}
+
+body.dark-mode #chat-popup-footer button {
+  background-color: #00a8ff;
+}
+
+body.dark-mode footer {
+  background-color: #000;
+}
+
+body.dark-mode .slider-arrow {
+  background-color: #00a8ff;
+}
+
+body.dark-mode .ai-message {
+  color: #00a8ff;
+}
+
+body.dark-mode .user-message {
+  color: #ffffff;
+}
