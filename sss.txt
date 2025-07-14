@@ -1,0 +1,13 @@
+what sort of communication are patients struggling with?
+In summarization and communication can we make it domain specific like for e.g., oncology?
+Route complex clinical updates or questions to staff with escalation logic <-- here are the questions from the customer? Is this part of the communication issue problem we are solving for?
+What does draft discharge summary comprise of? Is it common for all domains?
+ 
+
+
+
+The communication we refer to for patients is about the smaller day to day bits of the patient experience, and information that may be 'Live' and hence changing regularly. Think about things that a doctor would not have time for and you might not want to bother a nurse with, or perhaps one is not around. e.g. when is my MRI booked for? What is for lunch? When are the visiting hours? When am i due my next dose of medication? etc.
+You may choose to explore more advanced medical questions than these, but if that is the case then you need to show accuracy of responses and a 'human in the loop' step for doctors to review.
+Yes, you can make it specific if you wish. we don't want to be prescriptive with this hackathon in order to explore what people come up with.
+These may be questions from the patients or their family, but may also be uncertainties in the ward round draft or discharge summaries. At it's simplest, a discharge summary draft could be presented to a doctor to update as they see fit, but a more advanced version might be aware of where items stated in the summary are uncertain or may lack accuracy. These could then be presented to the doctor as explicit points rather than a whole doc to review. This same concept applies to other areas that may need review by a medical professional.
+This varies between hospitals/trusts, but many have a template, i will get you one shortly.
