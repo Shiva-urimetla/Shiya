@@ -11,3 +11,22 @@ You may choose to explore more advanced medical questions than these, but if tha
 Yes, you can make it specific if you wish. we don't want to be prescriptive with this hackathon in order to explore what people come up with.
 These may be questions from the patients or their family, but may also be uncertainties in the ward round draft or discharge summaries. At it's simplest, a discharge summary draft could be presented to a doctor to update as they see fit, but a more advanced version might be aware of where items stated in the summary are uncertain or may lack accuracy. These could then be presented to the doctor as explicit points rather than a whole doc to review. This same concept applies to other areas that may need review by a medical professional.
 This varies between hospitals/trusts, but many have a template, i will get you one shortly.
+
+
+
+
+
+
+
+
+
+
+
+Hi
+ 
+I am thinking of updating the patients communication through API gateway
+ 
+like after approval, sending patient details. 
+ 
+through API, directly the details will be saved to database and send patient about their schedules, meal plans, lab results or discharge details directly.
+ 
